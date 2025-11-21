@@ -1,6 +1,11 @@
 import React from "react";
 
-const Search = ({ searchTerm, setSearchTerm }) => {
+type SearchProps = {
+  searchTerm: string;
+  setSearchTerm: (term: string) => void;
+};
+
+const Search = ({ searchTerm, setSearchTerm }: SearchProps) => {
   return (
     <div className="search">
       <div>
